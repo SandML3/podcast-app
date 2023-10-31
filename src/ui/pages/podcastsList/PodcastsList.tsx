@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { GetAllPodcasts } from '../../../application/getAllPodcasts';
 import { Podcast } from '../../../domain/podcast';
 import { httpPodcastsRepository } from '../../../infrastructure/http/httpPodcastsRepository';
@@ -6,18 +6,23 @@ import { localStorageRepository } from '../../../infrastructure/localStorage/loc
 import PodcastItem from './podcastItem/PodcastItem';
 import { Form, NumberOfResults, PodcastsListUl, SearchSection } from './podcastsList.styles';
 
-function PodcastsList() {
+type PodcastsListProps = {
+    setIsLoadingData(value: boolean): void;
+}
+
+function PodcastsList({setIsLoadingData}: PodcastsListProps) {
     const [ allPodcasts, setAllPodcasts ]  = useState<Podcast[]>([]);
     const [ searchValue, setSearchValue ]  = useState('');
 
-    const getPodcasts = async () => {
+    const getPodcasts = useCallback( async () => {
         const podcasts = await new GetAllPodcasts(httpPodcastsRepository, localStorageRepository).execute();
         setAllPodcasts(podcasts);
-    }
+        setIsLoadingData(false)    
+    }, [setIsLoadingData]);
 
     useEffect(() => { 
        getPodcasts();
-    }, [])
+    }, [getPodcasts])
 
     const podcastList = allPodcasts.filter(podcast => podcast.title.includes(searchValue) || podcast.author.includes(searchValue)).map(podcast => <PodcastItem podcast={ podcast } key={ podcast.id }/>);
 

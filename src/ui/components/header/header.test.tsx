@@ -7,7 +7,7 @@ describe('Header component test', () => {
     it('Render header component', () => {
         render(
             <MemoryRouter>
-                <Header/>
+                <Header isLoading={true}/>
             </MemoryRouter>
         );
         const headerElement = screen.getByText(/Podcaster/i);

@@ -1,5 +1,5 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import PodcastList from '../pages/podcastList/PodcastList'
+import PodcastsList from '../pages/podcastsList/PodcastsList'
 import Header from '../components/header/Header'
 
 const Router = () => {
@@ -8,7 +8,7 @@ const Router = () => {
         <Header/>
         
         <Routes>
-            <Route path='/' element={<PodcastList />}/>
+            <Route path='/' element={<PodcastsList />}/>
             <Route path='/podcast/:podcastId'/>
             <Route path='/podcast/:podcastId/episode/:episodeId'/>
         </Routes>

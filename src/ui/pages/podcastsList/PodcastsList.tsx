@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { GetAllPodcasts } from '../../../application/getAllPodcasts';
-import { httpPodcastsRepository } from '../../../infrastructure/http/httpPodcastsRepository';
-import { Form, NumberOfResults, SearchSection } from './podcastList.styles';
 import { Podcast } from '../../../domain/podcast';
+import { httpPodcastsRepository } from '../../../infrastructure/http/httpPodcastsRepository';
+import PodcastItem from './podcastItem/PodcastItem';
+import { Form, NumberOfResults, PodcastsListUl, SearchSection } from './podcastsList.styles';
 
-function PodcastList() {
+function PodcastsList() {
     const [ allPodcasts, setAllPodcasts ]  = useState<Podcast[]>([]);
     // const [ searchValue, setSearchValue ]  = useState('');
 
@@ -17,19 +18,21 @@ function PodcastList() {
        getPodcasts();
     }, [])
 
+    const podcastList = allPodcasts.map(podcast => <PodcastItem podcast={ podcast } key={ podcast.id }/>)
+
     return <>
 
         <SearchSection>
-            <NumberOfResults>100</NumberOfResults>
+            <NumberOfResults>{ podcastList.length }</NumberOfResults>
             <Form>
                 <input type='text' placeholder='Filter podcasts...'/>
             </Form>
         </SearchSection>
 
-        <ul>
-            Podcasts items list
-        </ul>
+        <PodcastsListUl>
+            {podcastList}
+        </PodcastsListUl>
     </>
 }
 
-export default PodcastList;
+export default PodcastsList;

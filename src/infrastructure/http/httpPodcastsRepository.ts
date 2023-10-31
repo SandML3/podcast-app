@@ -11,9 +11,9 @@ export const httpPodcastsRepository: PodcastsRepository = {
         const podcasts = response.feed.entry;
         return podcasts.map((podcastDto: Entry) => ({
             id: podcastDto.id.attributes['im:id'],
-            title: podcastDto.title.label,
+            title: podcastDto['im:name'].label,
             author: podcastDto['im:artist'].label,
-            image: podcastDto['im:image'][0].label,
+            image: podcastDto['im:image'][2].label,
          }) )
     }
 }

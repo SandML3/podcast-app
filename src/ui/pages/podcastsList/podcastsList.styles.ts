@@ -33,3 +33,13 @@ export const SearchSection = styled.div `
     margin-right: 2rem; 
     gap: 0.8rem;
 `
+
+export const PodcastsListUl = styled.ul `
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    column-gap: 1rem;
+    row-gap: 8rem;
+`

@@ -29,6 +29,8 @@ export const PodcastTitle = styled.h2 `
     margin-bottom: 0;
     max-width: 90%;
     text-align: center;
+    max-height: 50px;
+    overflow: hidden;
 `
 
 export const PodcastAuthor = styled.p `

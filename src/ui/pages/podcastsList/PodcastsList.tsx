@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { GetAllPodcasts } from '../../../application/getAllPodcasts';
 import { Podcast } from '../../../domain/podcast';
 import { httpPodcastsRepository } from '../../../infrastructure/http/httpPodcastsRepository';
+import { localStorageRepository } from '../../../infrastructure/localStorage/localStorageRepository';
 import PodcastItem from './podcastItem/PodcastItem';
 import { Form, NumberOfResults, PodcastsListUl, SearchSection } from './podcastsList.styles';
-import { localStorageRepository } from '../../../infrastructure/localStorage/localStorageRepository';
 
 function PodcastsList() {
     const [ allPodcasts, setAllPodcasts ]  = useState<Podcast[]>([]);
@@ -19,7 +19,7 @@ function PodcastsList() {
        getPodcasts();
     }, [])
 
-    const podcastList = allPodcasts.map(podcast => <PodcastItem podcast={ podcast } key={ podcast.id }/>)
+    const podcastList = allPodcasts.filter(podcast => podcast.title.includes(searchValue) || podcast.author.includes(searchValue)).map(podcast => <PodcastItem podcast={ podcast } key={ podcast.id }/>);
 
     return <>
 

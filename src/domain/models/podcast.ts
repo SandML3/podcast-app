@@ -3,4 +3,5 @@ export type Podcast = {
     title: string;
     author: string;
     image: string;
+    summary: string;
 }

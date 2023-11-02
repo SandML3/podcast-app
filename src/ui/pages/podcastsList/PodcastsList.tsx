@@ -1,10 +1,10 @@
-import { useEffect, useState, useCallback } from 'react';
-import { GetAllPodcasts } from '../../../application/getAllPodcasts';
-import { Podcast } from '../../../domain/podcast';
+import { useCallback, useEffect, useState } from 'react';
+import { GetAllPodcasts } from '../../../application/usecases/getAllPodcasts/getAllPodcasts';
 import { httpPodcastsRepository } from '../../../infrastructure/http/httpPodcastsRepository';
 import { localStorageRepository } from '../../../infrastructure/localStorage/localStorageRepository';
 import PodcastItem from './podcastItem/PodcastItem';
 import { Form, NumberOfResults, PodcastsListUl, SearchSection } from './podcastsList.styles';
+import { Podcast } from '../../../domain/models/podcast';
 
 type PodcastsListProps = {
     setIsLoadingData(value: boolean): void;

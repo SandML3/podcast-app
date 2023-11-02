@@ -1,7 +1,8 @@
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { useState } from 'react';
-import PodcastsList from '../pages/podcastsList/PodcastsList'
-import Header from '../components/header/Header'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from '../components/header/Header';
+import PodcastDetail from '../pages/podcastDetail/PodcastDetail';
+import PodcastsList from '../pages/podcastsList/PodcastsList';
 
 const Router = () => {
     const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
@@ -11,7 +12,7 @@ const Router = () => {
         
         <Routes>
             <Route path='/' element={<PodcastsList setIsLoadingData={setIsLoadingData}/>}/>
-            <Route path='/podcast/:podcastId'/>
+            <Route path='/podcast/:podcastId' element={ <PodcastDetail setIsLoadingData={setIsLoadingData}/> } />
             <Route path='/podcast/:podcastId/episode/:episodeId'/>
         </Routes>
     </BrowserRouter>)

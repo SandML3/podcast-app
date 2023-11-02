@@ -1,6 +1,7 @@
-import { LocalStorageData } from "../../domain/localStorageData";
-import { LocalStorageRepository } from "../../domain/localStorageRepository";
-import { Podcast } from "../../domain/podcast";
+
+import { Podcast } from '../../domain/models/podcast';
+import { LocalStorageData } from '../../domain/repositories/localStorageData';
+import { LocalStorageRepository } from '../../domain/repositories/localStorageRepository';
 
 export const localStorageRepository: LocalStorageRepository = {
     set: function (key: string, value: Podcast[]): void {
@@ -23,7 +24,7 @@ export const localStorageRepository: LocalStorageRepository = {
         localStorage.removeItem(key);
     },
 
-    getRecent: function (key: string): Podcast[] | null {
+    getRecent: function <T>(key: string): T | null {
         const jsonStorageData = localStorage.getItem(key);
 
         if (jsonStorageData) {

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Podcast } from '../../../../domain/podcast';
+import { Podcast } from '../../../../domain/models/podcast';
 import { PodcastAuthor, PodcastContainer, PodcastImage, PodcastTitle } from './podcastItem.styles';
 
 interface PodcastItemProps {

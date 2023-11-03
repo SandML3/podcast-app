@@ -36,7 +36,7 @@ export const httpPodcastsRepository: PodcastsRepository = {
                 releaseDate: episode.releaseDate,
                 trackTime: episode.trackTimeMillis?.toString(),
                 description: episode.description,
-                shortDescription: episode.shortDescription
+                episodeUrl: episode.episodeUrl
             }))
         
         return episodes;

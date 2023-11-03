@@ -13,7 +13,7 @@ export const podcastDetailMock: DetailedPodcast = {
             releaseDate: "26/10/2023",
             trackTime: "20:19",
             description: "Maejor experiences biblical scripture come to life inside a dirty hotel room. Lil Gotit is the victim of a Cuban curse.\nSee omnystudio.com/listener for privacy information.",
-            shortDescription: ""
+            episodeUrl: ""
         },
         {
             trackId: 1000632486858,
@@ -21,7 +21,7 @@ export const podcastDetailMock: DetailedPodcast = {
             releaseDate: "24/10/2023",
             trackTime: "27:54",
             description: "Smiley describes a crack head zombie invasion and the witch who nearly dragged him to hell. Narcy meets Muhammad Ali in Africa. And Belly has another paranormal fright fest.\nSee omnystudio.com/listener for privacy information.",
-            shortDescription: ""
+            episodeUrl: ""
         },
         {
             trackId: 1000631558720,
@@ -29,7 +29,7 @@ export const podcastDetailMock: DetailedPodcast = {
             releaseDate: "17/10/2023",
             trackTime: "21:37",
             description: "Rowdy Rebel's voodoo nightmare. Big Boy sees dead people. \nSee omnystudio.com/listener for privacy information.",
-            shortDescription: ""
+            episodeUrl: ""
         },
         {
             trackId: 1000630777873,
@@ -37,7 +37,7 @@ export const podcastDetailMock: DetailedPodcast = {
             releaseDate: "10/10/2023",
             trackTime: "23:02",
             description: "King Von comforts Dreezy from beyond the grave and $kinny encounters a demonic stripper\nSee omnystudio.com/listener for privacy information.",
-            shortDescription: ""
+            episodeUrl: ""
         },
         {
             trackId: 1000630046783,
@@ -45,7 +45,7 @@ export const podcastDetailMock: DetailedPodcast = {
             releaseDate: "3/10/2023",
             trackTime: "20:55",
             description: "Ty Dolla $ign’s Insane Ghost Encounter. Symba has the sh!t scared out of him (literally). Iann Dior Finds Horror in a forbidden room.\nSee omnystudio.com/listener for privacy information.",
-            shortDescription: ""
+            episodeUrl: ""
         },
         {
             trackId: 1000630046995,
@@ -53,7 +53,7 @@ export const podcastDetailMock: DetailedPodcast = {
             releaseDate: "3/10/2023",
             trackTime: "21:03",
             description: "Belly’s childhood demon,  French Montana brings an evil spirit home from Morocco and JaVale McGee described a mysterious stranger who broke into his bedroom and watched him sleep.\nSee omnystudio.com/listener for privacy information.",
-            shortDescription: ""
+            episodeUrl: ""
         },
         {
             trackId: 1000629120615,
@@ -61,7 +61,7 @@ export const podcastDetailMock: DetailedPodcast = {
             releaseDate: "26/9/2023",
             trackTime: "01:35",
             description: "See omnystudio.com/listener for privacy information.",
-            shortDescription: ""
+            episodeUrl: ""
         }
     ]
 }

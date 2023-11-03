@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from '../components/header/Header';
+import EpisodeDetail from '../pages/episodeDetail/EpisodeDetail';
 import PodcastDetail from '../pages/podcastDetail/PodcastDetail';
 import PodcastsList from '../pages/podcastsList/PodcastsList';
 
@@ -13,7 +14,7 @@ const Router = () => {
         <Routes>
             <Route path='/' element={<PodcastsList setIsLoadingData={setIsLoadingData}/>}/>
             <Route path='/podcast/:podcastId' element={ <PodcastDetail setIsLoadingData={setIsLoadingData}/> } />
-            <Route path='/podcast/:podcastId/episode/:episodeId'/>
+            <Route path='/podcast/:podcastId/episode/:episodeId' element={<EpisodeDetail setIsLoadingData={setIsLoadingData}/>}/>
         </Routes>
     </BrowserRouter>)
 }

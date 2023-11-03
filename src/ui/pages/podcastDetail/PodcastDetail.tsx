@@ -17,6 +17,7 @@ function PodcastDetail({ setIsLoadingData }: PodcastDetailProps) {
     const { podcastId } = useParams();
 
     const getPodcastDetail = useCallback( async () => {
+        setIsLoadingData(true); 
         const usecase = new GetPodcastDetail(httpPodcastsRepository, localStorageRepository);
         const podcast = await usecase.execute(podcastId!);
         if (podcast) setPodcast(podcast);
@@ -24,8 +25,7 @@ function PodcastDetail({ setIsLoadingData }: PodcastDetailProps) {
     }, [podcastId, setIsLoadingData]);
 
     
-    useEffect( () => {
-       setIsLoadingData(true);    
+    useEffect( () => {   
        getPodcastDetail();
     }, [getPodcastDetail, setIsLoadingData]);
     

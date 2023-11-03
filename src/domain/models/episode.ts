@@ -4,5 +4,5 @@ export interface Episode {
     releaseDate: string
     trackTime: string
     description: string
-    shortDescription: string
+    episodeUrl: string
   }

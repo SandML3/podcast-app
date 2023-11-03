@@ -5,7 +5,7 @@ import { DetailedPodcast } from '../../../domain/models/detailedPodcast';
 import { httpPodcastsRepository } from '../../../infrastructure/http/httpPodcastsRepository';
 import { localStorageRepository } from '../../../infrastructure/localStorage/localStorageRepository';
 import PodcastInfo from '../../components/podcastInfo/PodcastInfo';
-import EpisodesInfo from './episodesInfo/EpisodesInfo';
+import EpisodesList from './episodesList/EpisodesList';
 import { Container } from './podcastDetail.styles';
 
 type PodcastDetailProps = {
@@ -32,7 +32,7 @@ function PodcastDetail({ setIsLoadingData }: PodcastDetailProps) {
     return <Container>
        {podcast && <>
             <PodcastInfo podcast={ podcast }/>
-            <EpisodesInfo podcast={ podcast }/>
+            <EpisodesList podcast={ podcast }/>
         </>}
     </Container>;
 };

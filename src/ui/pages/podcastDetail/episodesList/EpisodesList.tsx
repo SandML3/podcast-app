@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { DetailedPodcast } from "../../../../domain/models/detailedPodcast";
-import { Container, EpisodeDate, EpisodeDuration, EpisodeName, NumberOfEpisodes, Table, TableRow, TableTitle, TableWrapper } from "./episodesInfo.styles";
+import { Container, EpisodeDate, EpisodeDuration, EpisodeName, NumberOfEpisodes, Table, TableRow, TableTitle, TableWrapper } from "./episodesList.styles";
 
-type EpisodesInfoProps = {
+type EpisodesListProps = {
     podcast: DetailedPodcast;
 }
 
-function EpisodesInfo({ podcast }: EpisodesInfoProps) {
+function EpisodesList({ podcast }: EpisodesListProps) {
     const navigate = useNavigate();
 
     const episodesTableInfo = podcast.episodes.map((episode, index) => {
@@ -37,4 +37,4 @@ function EpisodesInfo({ podcast }: EpisodesInfoProps) {
     </Container>
 }
 
-export default EpisodesInfo;
+export default EpisodesList;

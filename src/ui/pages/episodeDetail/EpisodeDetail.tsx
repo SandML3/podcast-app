@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { GetPodcastDetail } from "../../../application/usecases/getPodcastDetail/getPodcastDetail";
 import { DetailedPodcast } from "../../../domain/models/detailedPodcast";
+import { Episode } from "../../../domain/models/episode";
 import { httpPodcastsRepository } from "../../../infrastructure/http/httpPodcastsRepository";
 import { localStorageRepository } from "../../../infrastructure/localStorage/localStorageRepository";
 import PodcastInfo from "../../components/podcastInfo/PodcastInfo";
@@ -13,6 +14,8 @@ type EpisodeDetailProps = {
 }
 export function EpisodeDetail({setIsLoadingData}: EpisodeDetailProps) {
     const [ podcast, setPodcast ] = useState<DetailedPodcast>();
+    const [ episode, setEpisode ] = useState<Episode>();
+
     const { podcastId, episodeId } = useParams();
 
     const getPodcastDetail = useCallback( async () => {
@@ -20,19 +23,20 @@ export function EpisodeDetail({setIsLoadingData}: EpisodeDetailProps) {
         const usecase = new GetPodcastDetail(httpPodcastsRepository, localStorageRepository);
         const podcast = await usecase.execute(podcastId!);
         if (podcast) setPodcast(podcast);
-        setIsLoadingData(false)    
+        const episode = podcast.episodes.find(episode => episode.id?.toString() === episodeId);
+        setEpisode(episode);
+        setIsLoadingData(false)
 
-    }, [podcastId, setIsLoadingData]);
-
+    }, [episodeId, podcastId, setIsLoadingData]);
     
     useEffect( () => {
        getPodcastDetail();
     }, [getPodcastDetail, setIsLoadingData]);
 
     return <>
-        {podcast && <Container>
+        {podcast && episode && <Container>
             <PodcastInfo podcast={ podcast }/>
-            <EpisodeInfo podcast={ podcast } />
+            <EpisodeInfo episode={ episode } />
         </Container>}
     </>
 }

@@ -8,7 +8,7 @@ export const podcastDetailMock: DetailedPodcast = {
     summary: "Legends of the rap game tell stories of paranormal encounters and terrifying tales of hauntings, demonic possession, ghosts and weird stuff that goes bump in the night. Featuring French Montana, Iann Dior, Ty Dolla $ign, Dreezy, Rowdy Rebel, Smiley and many more. It's a feast for the ears with original music and immersive sound design that will make you afraid to turn off the lights.",
     episodes: [
         {
-            trackId: 1000632638275,
+            id: 1000632638275,
             trackName: "Maejor x Lil Gotit",
             releaseDate: "26/10/2023",
             trackTime: "20:19",
@@ -16,7 +16,7 @@ export const podcastDetailMock: DetailedPodcast = {
             episodeUrl: ""
         },
         {
-            trackId: 1000632486858,
+            id: 1000632486858,
             trackName: "Smiley x Narcy x Belly",
             releaseDate: "24/10/2023",
             trackTime: "27:54",
@@ -24,7 +24,7 @@ export const podcastDetailMock: DetailedPodcast = {
             episodeUrl: ""
         },
         {
-            trackId: 1000631558720,
+            id: 1000631558720,
             trackName: "Rowdy Rebel x Big Boy",
             releaseDate: "17/10/2023",
             trackTime: "21:37",
@@ -32,7 +32,7 @@ export const podcastDetailMock: DetailedPodcast = {
             episodeUrl: ""
         },
         {
-            trackId: 1000630777873,
+            id: 1000630777873,
             trackName: "$kinny x Dreezy",
             releaseDate: "10/10/2023",
             trackTime: "23:02",
@@ -40,7 +40,7 @@ export const podcastDetailMock: DetailedPodcast = {
             episodeUrl: ""
         },
         {
-            trackId: 1000630046783,
+            id: 1000630046783,
             trackName: "Ty Dolla $ign x Symba x Iann Dior",
             releaseDate: "3/10/2023",
             trackTime: "20:55",
@@ -48,7 +48,7 @@ export const podcastDetailMock: DetailedPodcast = {
             episodeUrl: ""
         },
         {
-            trackId: 1000630046995,
+            id: 1000630046995,
             trackName: "Belly x  French Montana x JaVale McGee",
             releaseDate: "3/10/2023",
             trackTime: "21:03",
@@ -56,7 +56,7 @@ export const podcastDetailMock: DetailedPodcast = {
             episodeUrl: ""
         },
         {
-            trackId: 1000629120615,
+            id: 1000629120615,
             trackName: "Introducing: Hip Hop Horror Stories",
             releaseDate: "26/9/2023",
             trackTime: "01:35",

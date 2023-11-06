@@ -1,5 +1,5 @@
 export interface Episode {
-    trackId: number
+    id: number
     trackName: string
     releaseDate: string
     trackTime: string

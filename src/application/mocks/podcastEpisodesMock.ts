@@ -2,7 +2,7 @@ import { Episode } from '../../domain/models/episode';
 
 export const podcastEpisodesMock: Episode[] = [
     {
-        trackId: 1000632638275,
+        id: 1000632638275,
         trackName: "Maejor x Lil Gotit",
         releaseDate: "2023-10-26T00:21:36Z",
         trackTime: "1219000",
@@ -10,7 +10,7 @@ export const podcastEpisodesMock: Episode[] = [
         episodeUrl: ""
     },
     {
-        trackId: 1000632486858,
+        id: 1000632486858,
         trackName: "Smiley x Narcy x Belly",
         releaseDate: "2023-10-24T20:32:29Z",
         trackTime: "1674000",
@@ -18,7 +18,7 @@ export const podcastEpisodesMock: Episode[] = [
         episodeUrl: ""
     },
     {
-        trackId: 1000631558720,
+        id: 1000631558720,
         trackName: "Rowdy Rebel x Big Boy",
         releaseDate: "2023-10-17T04:00:00Z",
         trackTime: "1297000",
@@ -26,7 +26,7 @@ export const podcastEpisodesMock: Episode[] = [
         episodeUrl: ""
     },
     {
-        trackId: 1000630777873,
+        id: 1000630777873,
         trackName: "$kinny x Dreezy",
         releaseDate: "2023-10-10T04:00:00Z",
         trackTime: "1382000",
@@ -34,7 +34,7 @@ export const podcastEpisodesMock: Episode[] = [
         episodeUrl: ""
     },
     {
-        trackId: 1000630046783,
+        id: 1000630046783,
         trackName: "Ty Dolla $ign x Symba x Iann Dior",
         releaseDate: "2023-10-03T04:01:00Z",
         trackTime: "1255000",
@@ -42,7 +42,7 @@ export const podcastEpisodesMock: Episode[] = [
         episodeUrl: ""
     },
     {
-        trackId: 1000630046995,
+        id: 1000630046995,
         trackName: "Belly x  French Montana x JaVale McGee",
         releaseDate: "2023-10-03T04:01:00Z",
         trackTime: "1263000",
@@ -50,7 +50,7 @@ export const podcastEpisodesMock: Episode[] = [
         episodeUrl: ""
     },
     {
-        trackId: 1000629120615,
+        id: 1000629120615,
         trackName: "Introducing: Hip Hop Horror Stories",
         releaseDate: "2023-09-26T05:05:00Z",
         trackTime: "95000",

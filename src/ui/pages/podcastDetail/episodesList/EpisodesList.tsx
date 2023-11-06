@@ -12,7 +12,7 @@ function EpisodesList({ podcast }: EpisodesListProps) {
     const episodesTableInfo = podcast.episodes.map((episode, index) => {
         const isEven = index % 2 === 0;
         
-        return (<TableRow key={episode.trackId} $even={isEven} onClick={() => navigate(`episode/${episode.trackId}`)}>
+        return (<TableRow key={episode.id} $even={isEven} onClick={() => navigate(`episode/${episode.id}`)}>
                 <EpisodeName>{episode.trackName}</EpisodeName>
                 <EpisodeDate>{episode.releaseDate}</EpisodeDate>
                 <EpisodeDuration>{episode.trackTime}</EpisodeDuration>

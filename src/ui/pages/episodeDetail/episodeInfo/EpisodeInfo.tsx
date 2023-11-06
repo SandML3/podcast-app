@@ -1,13 +1,12 @@
 import DOMPurify from 'dompurify';
-import { DetailedPodcast } from '../../../../domain/models/detailedPodcast';
+import { Episode } from '../../../../domain/models/episode';
 import { Audio, EpisodeDescription, EpisodeTitle, EspisodeCard } from './episodeInfo.styles';
 
 type EpisodeInfoProps = {
-    podcast: DetailedPodcast;
+    episode: Episode;
 }
 
-function EpisodeInfo({ podcast }: EpisodeInfoProps) {
-    const episode = podcast.episodes[0];
+function EpisodeInfo({ episode }: EpisodeInfoProps) {
     const sanitizedHtml = DOMPurify.sanitize(episode.description);
 
     return <EspisodeCard>  

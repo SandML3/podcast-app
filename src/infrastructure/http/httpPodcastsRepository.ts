@@ -31,7 +31,7 @@ export const httpPodcastsRepository: PodcastsRepository = {
         const episodes: Episode[] = response.results
             .slice(1)
             .map(episode => ({
-                trackId: episode.trackId,
+                id: episode.trackId,
                 trackName:  episode.trackName,
                 releaseDate: episode.releaseDate,
                 trackTime: episode.trackTimeMillis?.toString(),

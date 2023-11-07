@@ -61,6 +61,8 @@ export class GetPodcastDetail {
     }
 
     private formatDuration(trackTime: string) {
+        if (!trackTime) return '-';
+        
         const milliseconds = parseInt(trackTime);
         const timeArray = [];
 

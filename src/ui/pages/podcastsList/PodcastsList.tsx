@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
+import { FilterPodcasts } from '../../../application/usecases/filterPodcasts/filterPodcasts';
 import { GetAllPodcasts } from '../../../application/usecases/getAllPodcasts/getAllPodcasts';
+import { Podcast } from '../../../domain/models/podcast';
 import { httpPodcastsRepository } from '../../../infrastructure/http/httpPodcastsRepository';
 import { localStorageRepository } from '../../../infrastructure/localStorage/localStorageRepository';
 import PodcastItem from './podcastItem/PodcastItem';
 import { Form, NumberOfResults, PodcastsListUl, SearchSection } from './podcastsList.styles';
-import { Podcast } from '../../../domain/models/podcast';
 
 type PodcastsListProps = {
     setIsLoadingData(value: boolean): void;
@@ -24,7 +25,8 @@ function PodcastsList({setIsLoadingData}: PodcastsListProps) {
        getPodcasts();
     }, [getPodcasts])
 
-    const podcastList = allPodcasts.filter(podcast => podcast.title.includes(searchValue) || podcast.author.includes(searchValue)).map(podcast => <PodcastItem podcast={ podcast } key={ podcast.id }/>);
+    const filteredPodcasts = new FilterPodcasts().execute(allPodcasts, searchValue);
+    const podcastList =  filteredPodcasts.map(podcast => <PodcastItem podcast={ podcast } key={ podcast.id }/>);
 
     return <>
 

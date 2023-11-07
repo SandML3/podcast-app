@@ -1,20 +1,29 @@
-import { useState } from 'react';
+import { useState, Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from '../components/header/Header';
-import EpisodeDetail from '../pages/episodeDetail/EpisodeDetail';
-import PodcastDetail from '../pages/podcastDetail/PodcastDetail';
-import PodcastsList from '../pages/podcastsList/PodcastsList';
 
 const Router = () => {
     const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
+    const PodcastsList = lazy(() => import('../pages/podcastsList/PodcastsList'));
+    const PodcastDetail = lazy(() => import('../pages/podcastDetail/PodcastDetail'));
+    const EpisodeDetail = lazy(() => import('../pages/episodeDetail/EpisodeDetail'));
 
     return ( <BrowserRouter>
         <Header isLoading={ isLoadingData } />
-        
+
         <Routes>
-            <Route path='/' element={<PodcastsList setIsLoadingData={setIsLoadingData}/>}/>
-            <Route path='/podcast/:podcastId' element={ <PodcastDetail setIsLoadingData={setIsLoadingData}/> } />
-            <Route path='/podcast/:podcastId/episode/:episodeId' element={<EpisodeDetail setIsLoadingData={setIsLoadingData}/>}/>
+            <Route path='/' element={ 
+                <Suspense fallback={<div>Loading...</div>}>
+                   <PodcastsList setIsLoadingData={setIsLoadingData}/>
+                </Suspense> } />
+            <Route path='/podcast/:podcastId' element={ 
+                <Suspense fallback={<div>Loading...</div>}>
+                    <PodcastDetail setIsLoadingData={setIsLoadingData}/>
+                </Suspense> } />
+            <Route path='/podcast/:podcastId/episode/:episodeId' element={ 
+                <Suspense fallback={<div>Loading...</div>}>
+                    <EpisodeDetail setIsLoadingData={setIsLoadingData}/>
+                </Suspense> }/>
         </Routes>
     </BrowserRouter>)
 }

@@ -46,7 +46,18 @@ export class GetPodcastDetail {
     }
 
     private formatDate(date: string) {
-        return new Date(date).toLocaleDateString();
+        const parsedDate = new Date(date);
+        const timeZone = 'Europe/Madrid';
+
+        const dateFormat = new Intl.DateTimeFormat('es-ES', {
+            timeZone,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour12: false,
+        });
+
+        return dateFormat.format(parsedDate);
     }
 
     private formatDuration(trackTime: string) {

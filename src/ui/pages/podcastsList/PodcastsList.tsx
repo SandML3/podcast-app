@@ -28,8 +28,7 @@ function PodcastsList({setIsLoadingData}: PodcastsListProps) {
     const filteredPodcasts = new FilterPodcasts().execute(allPodcasts, searchValue);
     const podcastList =  filteredPodcasts.map(podcast => <PodcastItem podcast={ podcast } key={ podcast.id }/>);
 
-    return <>
-
+    return <div data-testid="podcasts-list">
         <SearchSection>
             <NumberOfResults>{ podcastList.length }</NumberOfResults>
             <Form>
@@ -40,7 +39,7 @@ function PodcastsList({setIsLoadingData}: PodcastsListProps) {
         <PodcastsListUl>
             {podcastList}
         </PodcastsListUl>
-    </>
+    </div>
 }
 
 export default PodcastsList;

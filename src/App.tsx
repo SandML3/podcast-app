@@ -3,7 +3,7 @@ import Router from './ui/routes/Router';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App' data-testid="app" >
         <Router/>
     </div>
   );

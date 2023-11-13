@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { GetEpisodeDetail } from "../../../application/usecases/getEpisodeDetail/getEpisodeDetail";
 import { GetPodcastDetail } from "../../../application/usecases/getPodcastDetail/getPodcastDetail";
 import { DetailedPodcast } from "../../../domain/models/detailedPodcast";
 import { Episode } from "../../../domain/models/episode";
@@ -20,10 +21,11 @@ export function EpisodeDetail({setIsLoadingData}: EpisodeDetailProps) {
 
     const getPodcastDetail = useCallback( async () => {
         setIsLoadingData(true);  
-        const usecase = new GetPodcastDetail(httpPodcastsRepository, localStorageRepository);
-        const podcast = await usecase.execute(podcastId!);
+        const getPodcastUsecase = new GetPodcastDetail(httpPodcastsRepository, localStorageRepository);
+        const podcast = await getPodcastUsecase.execute(podcastId!);
         if (podcast) setPodcast(podcast);
-        const episode = podcast.episodes.find(episode => episode.id?.toString() === episodeId);
+        const getEpisodeUsecase = new GetEpisodeDetail(httpPodcastsRepository, localStorageRepository);
+        const episode = await getEpisodeUsecase.execute(podcastId!, episodeId!);
         setEpisode(episode);
         setIsLoadingData(false)
 

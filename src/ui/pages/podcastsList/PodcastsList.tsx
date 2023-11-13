@@ -30,13 +30,13 @@ function PodcastsList({setIsLoadingData}: PodcastsListProps) {
 
     return <div data-testid="podcasts-list">
         <SearchSection>
-            <NumberOfResults>{ podcastList.length }</NumberOfResults>
+            <NumberOfResults  id='results-number'>{ podcastList.length }</NumberOfResults>
             <Form>
-                <input type='text' placeholder='Filter podcasts...' value={ searchValue } onChange={ (e) => setSearchValue(e.currentTarget.value) }/>
+                <input type='text' id='podcast-filter' placeholder='Filter podcasts...' value={ searchValue } onChange={ (e) => setSearchValue(e.currentTarget.value) }/>
             </Form>
         </SearchSection>
 
-        <PodcastsListUl>
+        <PodcastsListUl id='podcast-list'>
             {podcastList}
         </PodcastsListUl>
     </div>

@@ -13,16 +13,16 @@ function EpisodesList({ podcast }: EpisodesListProps) {
         const isEven = index % 2 === 0;
         
         return (<TableRow key={episode.id} $even={isEven} onClick={() => navigate(`episode/${episode.id}`)}>
-                <EpisodeName data-testid="episode-name">{episode.trackName}</EpisodeName>
-                <EpisodeDate data-testid="episode-date">{episode.releaseDate}</EpisodeDate>
-                <EpisodeDuration data-testid="episode-duration">{episode.trackTime}</EpisodeDuration>
+                <EpisodeName data-testid="episode-name" id='episode-title'>{episode.trackName}</EpisodeName>
+                <EpisodeDate data-testid="episode-date"  id='episode-date'>{episode.releaseDate}</EpisodeDate>
+                <EpisodeDuration data-testid="episode-duration"  id='episode-duration'>{episode.trackTime}</EpisodeDuration>
             </TableRow>
         )
     });
 
     return <Container>
-        <NumberOfEpisodes>Episodes: {podcast.episodes.length}</NumberOfEpisodes>
-        <TableWrapper>
+        <NumberOfEpisodes id='episodes-number'>Episodes: {podcast.episodes.length}</NumberOfEpisodes>
+        <TableWrapper  id='episodes-list'>
             <Table>
                 <tbody>
                     <TableTitle>

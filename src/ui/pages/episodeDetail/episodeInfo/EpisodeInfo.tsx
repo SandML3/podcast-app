@@ -9,10 +9,10 @@ type EpisodeInfoProps = {
 function EpisodeInfo({ episode }: EpisodeInfoProps) {
     const sanitizedHtml = DOMPurify.sanitize(episode.description);
 
-    return <EspisodeCard>  
-        <EpisodeTitle>{episode.trackName}</EpisodeTitle>
-        <EpisodeDescription dangerouslySetInnerHTML={{__html: sanitizedHtml}}></EpisodeDescription>
-        <Audio controls>
+    return <EspisodeCard id="episode-detail">  
+        <EpisodeTitle id="episode-title">{episode.trackName}</EpisodeTitle>
+        <EpisodeDescription id="episode-description" dangerouslySetInnerHTML={{__html: sanitizedHtml}}></EpisodeDescription>
+        <Audio id="episode-audio" controls>
             <source src={episode.episodeUrl} type="audio/mpeg"></source>
         </Audio>
     </EspisodeCard>

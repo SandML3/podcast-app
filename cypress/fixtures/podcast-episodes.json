@@ -1,0 +1,153 @@
+{
+    "resultCount": 101,
+    "results": [
+        {
+            "wrapperType": "track",
+            "kind": "podcast",
+            "artistId": 1535844019,
+            "collectionId": 1535809341,
+            "trackId": 1535809341,
+            "artistName": "The Joe Budden Network",
+            "collectionName": "The Joe Budden Podcast",
+            "trackName": "The Joe Budden Podcast",
+            "collectionCensoredName": "The Joe Budden Podcast",
+            "trackCensoredName": "The Joe Budden Podcast",
+            "artistViewUrl": "https://podcasts.apple.com/us/artist/the-joe-budden-network/1535844019?uo=4",
+            "collectionViewUrl": "https://podcasts.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?uo=4",
+            "feedUrl": "https://jbpod.libsyn.com/applepodcast",
+            "trackViewUrl": "https://podcasts.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?uo=4",
+            "artworkUrl30": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/30x30bb.jpg",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/100x100bb.jpg",
+            "collectionPrice": 0,
+            "trackPrice": 0,
+            "collectionHdPrice": 0,
+            "releaseDate": "2023-11-11T08:00:00Z",
+            "collectionExplicitness": "notExplicit",
+            "trackExplicitness": "explicit",
+            "trackCount": 435,
+            "trackTimeMillis": 10959,
+            "country": "USA",
+            "currency": "USD",
+            "primaryGenreName": "Music",
+            "contentAdvisoryRating": "Explicit",
+            "artworkUrl600": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/600x600bb.jpg",
+            "genreIds": [
+                "1310",
+                "26"
+            ],
+            "genres": [
+                "Music",
+                "Podcasts"
+            ]
+        },
+        {
+            "country": "USA",
+            "artworkUrl600": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/600x600bb.jpg",
+            "artistIds": [
+                1535844019
+            ],
+            "collectionViewUrl": "https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4",
+            "trackTimeMillis": 10959000,
+            "releaseDate": "2023-11-11T08:00:00Z",
+            "description": "The JBP returns to the airwaves as they begin with discussing the recent interview between Jeezy & Nia Long that was released earlier this week (24:30). In new music, Chris Brown drops his new project ‘11:11’ (46:10), BJ the Chicago Kid releases his album ‘Gravy’ (59:39), and Meek Mill & Rick Ross drop ‘Too Good To Be True’ (1:07:04). Also, the JBP goes through the Hip-Hop & R&B Grammy Nominations (1:29:28), KeKe Palmer files restraining order on her ex (1:52:02), an update on the Young Thug Trial (1:57:25), a new Frank Ocean snippet (2:09:16), Lori Harvey & Damson Idris announce their split (2:17:39), + MORE!\n Become a Patron of The Joe Budden Podcast for additional bonus episodes and visual content for all things JBP! Join our Patreon here: www.patreon.com/JoeBudden\n  \n Sleeper Picks: \n Joe | Chris Brown (feat. Fridayy) - “No One Else”\n Ice | Chris Brown (feat. Justin Bieber) - “Double Negative” \n Parks | BJ The Chicago Kid (feat. Freddie Gibbs) - “Liquor Store In The Sky” \n Ish | Breez Kennedy & Genia - “Need U Tonite” ",
+            "feedUrl": "https://jbpod.libsyn.com/applepodcast",
+            "shortDescription": "The JBP returns to the airwaves as they begin with discussing the recent interview between Jeezy & Nia Long that was released earlier this week (24:30). In new music, Chris Brown drops his new project ‘11:11’ (46:10), BJ the Chicago Kid...",
+            "closedCaptioning": "none",
+            "collectionId": 1535809341,
+            "collectionName": "The Joe Budden Podcast",
+            "trackId": 1000634453100,
+            "trackName": "Episode 674 | \"Refer to The Tag\"",
+            "contentAdvisoryRating": "Explicit",
+            "trackViewUrl": "https://podcasts.apple.com/us/podcast/episode-674-refer-to-the-tag/id1535809341?i=1000634453100&uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg",
+            "artistViewUrl": "https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4",
+            "previewUrl": "https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_674.mp3?dest-id=2422538",
+            "episodeUrl": "https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_674.mp3?dest-id=2422538",
+            "episodeFileExtension": "mp3",
+            "artworkUrl160": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/160x160bb.jpg",
+            "episodeContentType": "audio",
+            "episodeGuid": "e03c68d8-7b3f-4efd-8dd8-42e55b0bcb64",
+            "genres": [
+                {
+                    "name": "Music",
+                    "id": "1310"
+                }
+            ],
+            "kind": "podcast-episode",
+            "wrapperType": "podcastEpisode"
+        },
+        {
+            "country": "USA",
+            "artworkUrl600": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/600x600bb.jpg",
+            "artistIds": [
+                1535844019
+            ],
+            "collectionViewUrl": "https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4",
+            "trackTimeMillis": 11265000,
+            "releaseDate": "2023-11-08T08:00:00Z",
+            "description": "The JBP starts this week with a recap of Joe’s Saturday night after getting into an altercation (31:10) before QueenzFlip & Parks also address their names recently being in the news (55:32). Lloyd Banks is set to release ‘Cold Corner 3’ for $100 which leads to a discussion on selling music (1:13:20), Dee-1 calls out Rick Ross, Meek Mill, & Jim Jones for their lyrics in Hip-Hop (1:52:19), Lauryn Hill defends her concert tardiness (2:08:45), Part of the Show (2:23:26), + MORE! \n Become a Patron of The Joe Budden Podcast for additional bonus episodes and visual content for all things JBP! Join our Patreon here: www.patreon.com/JoeBudden\n  \n Sleeper Picks: \n Joe | Jordin Sparks - “Call My Name”\n Ice | Lloyd Banks - “Clubbin’ & Chaos”\n Parks | Rapsody & Hit-Boy - “Asteroids” \n Ish | Savannah Cristina - “Prototype”\n Melyssa Alé Araya | - “treetops”",
+            "feedUrl": "https://jbpod.libsyn.com/applepodcast",
+            "shortDescription": "The JBP starts this week with a recap of Joe’s Saturday night after getting into an altercation (31:10) before QueenzFlip & Parks also address their names recently being in the news (55:32). Lloyd Banks is set to release ‘Cold Corner 3’ for...",
+            "closedCaptioning": "none",
+            "collectionId": 1535809341,
+            "collectionName": "The Joe Budden Podcast",
+            "trackId": 1000634109819,
+            "trackName": "Episode 673 | \"CLOUT RULES EVERYTHING AROUND ME\"",
+            "contentAdvisoryRating": "Explicit",
+            "trackViewUrl": "https://podcasts.apple.com/us/podcast/episode-673-clout-rules-everything-around-me/id1535809341?i=1000634109819&uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg",
+            "artistViewUrl": "https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4",
+            "previewUrl": "https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_673.mp3?dest-id=2422538",
+            "episodeUrl": "https://traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_673.mp3?dest-id=2422538",
+            "episodeFileExtension": "mp3",
+            "artworkUrl160": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/160x160bb.jpg",
+            "episodeContentType": "audio",
+            "episodeGuid": "f6c14a80-b53c-44cb-b020-21151f05ceb0",
+            "genres": [
+                {
+                    "name": "Music",
+                    "id": "1310"
+                }
+            ],
+            "kind": "podcast-episode",
+            "wrapperType": "podcastEpisode"
+        },
+        {
+            "country": "USA",
+            "artworkUrl600": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/600x600bb.jpg",
+            "artistIds": [
+                1535844019
+            ],
+            "collectionViewUrl": "https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4",
+            "trackTimeMillis": 13317000,
+            "releaseDate": "2023-11-04T07:00:00Z",
+            "description": "The JBP kicks off this episode with Joe sharing the backstory of his Wednesday evening due to a recent viral video that hit social media (20:27). In new music, Jeezy drops his double album ‘I Might Forgive… But I Don’t Forget’ (45:33), reactions to Meg Thee Stallion’s new single ‘Cobra’ (51:18), Benny the Butcher & Lil Wayne link up once again for ‘Big Dog’ (1:24:00), Lucky Daye releases his new record ‘That’s You’ (1:29:44), and The Beatles are back thanks to the support of AI (1:42:33) . Also, Lil Yachty sits down with J. Cole as they address Joe’s reaction to ‘First Person Shooter’ (1:50:50), the room shares their condolences to the fama father and son are killed outside their apartment in Brooklyn (2:13:48), Kim Kardashian shares that her Kanye’s daughter prefers Dad’s house (2:24:32), Shaq agrees with Ish’s take on Bol Bol & Wemby (2:41:20), a lot of people have had enough of Akademiks (2:58:20), + MORE! \n  \n Become a Patron of The Joe Budden Podcast for additional bonus episodes and visual content for all things JBP! Join our Patreon here: www.patreon.com/JoeBudden\n  \n Sleeper Picks: \n Joe | Majid Jordan - “Tears In Your Eyes”\n Ice | Jeezy - “Keep the Change”\n Parks | Jeezy - “Since Pac Died”\n Ish | Arin Ray & Vanilla is Black - “Cold”\n Melyssa | Alice Smith - “I Put a Spell On You” ",
+            "feedUrl": "https://jbpod.libsyn.com/applepodcast",
+            "shortDescription": "The JBP kicks off this episode with Joe sharing the backstory of his Wednesday evening due to a recent viral video that hit social media (20:27). In new music, Jeezy drops his double album ‘I Might Forgive… But I Don’t Forget’ (45:33),...",
+            "closedCaptioning": "none",
+            "collectionId": 1535809341,
+            "collectionName": "The Joe Budden Podcast",
+            "trackId": 1000633664580,
+            "trackName": "Episode 672 | \"Pressing Buddens\"",
+            "contentAdvisoryRating": "Explicit",
+            "trackViewUrl": "https://podcasts.apple.com/us/podcast/episode-672-pressing-buddens/id1535809341?i=1000633664580&uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg",
+            "artistViewUrl": "https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4",
+            "previewUrl": "https://traffic.libsyn.com/secure/jbpod/V2__Joe_Budden_Podcast_672.mp3?dest-id=2422538",
+            "episodeUrl": "https://traffic.libsyn.com/secure/jbpod/V2__Joe_Budden_Podcast_672.mp3?dest-id=2422538",
+            "episodeFileExtension": "mp3",
+            "artworkUrl160": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/160x160bb.jpg",
+            "episodeContentType": "audio",
+            "episodeGuid": "67869603-8f74-4cff-939f-1d870a7c2f74",
+            "genres": [
+                {
+                    "name": "Music",
+                    "id": "1310"
+                }
+            ],
+            "kind": "podcast-episode",
+            "wrapperType": "podcastEpisode"
+        }
+    ]
+}

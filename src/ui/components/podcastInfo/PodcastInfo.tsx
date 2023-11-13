@@ -8,17 +8,17 @@ type PodcastInfoProps = {
 
 function PodcastInfo({ podcast }: PodcastInfoProps) {
 
-    return <Card>  
+    return <Card id='podcast-info'>  
         <StyledReactLink to={`/podcast/${podcast.id}`}>
-            <img alt={ podcast.title } title={ podcast.title } src={ podcast.image } />
+            <img alt={ podcast.title } title={ podcast.title } src={ podcast.image } id='podcast-image'/>
         </StyledReactLink>
         <Link to={`/podcast/${podcast.id}`}>
-            <Title> { podcast.title } </Title>
-            <Author> by { podcast.author } </Author>
+            <Title id='podcast-title'> { podcast.title } </Title>
+            <Author id='podcast-author'> by { podcast.author } </Author>
         </Link>
         <Description>
             <DescriptionLabel> Description: </DescriptionLabel>
-            <p> { podcast.summary } </p>
+            <p id='podcast-description'> { podcast.summary } </p>
         </Description>
     </Card>
 }

@@ -8,10 +8,10 @@ interface PodcastItemProps {
 
 function PodcastItem({ podcast }: PodcastItemProps) {
     const navigate = useNavigate();
-    return (<PodcastContainer onClick={() => navigate(`/podcast/${ podcast.id }`)}>
-        <PodcastImage alt={ podcast.title } title={ podcast.title } src={ podcast.image }/>
-        <PodcastTitle>{ podcast.title }</PodcastTitle>
-        <PodcastAuthor> Author: { podcast.author }</PodcastAuthor>
+    return (<PodcastContainer onClick={() => navigate(`/podcast/${ podcast.id }`)} id='podcast-item'>
+        <PodcastImage alt={ podcast.title } title={ podcast.title } src={ podcast.image } id='podcast-image'/>
+        <PodcastTitle id='podcast-title'>{ podcast.title }</PodcastTitle>
+        <PodcastAuthor id='podcast-author'> Author: { podcast.author }</PodcastAuthor>
     </PodcastContainer>);
 }
 

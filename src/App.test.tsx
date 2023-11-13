@@ -5,9 +5,9 @@ import App from "./App";
 test('renders App component', async () => {
     render(<App />);
 
-    await waitFor(() => {
+    await waitFor(async () => {
         const app = screen.getByTestId('app');
-        expect(app).toBeInTheDocument()
+        expect(app).toBeInTheDocument();
     })
 }) 
 
